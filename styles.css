@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #ecf0f1;
+    --text-color: #2c3e50;
+    --font-family: 'Arial', sans-serif;
+}
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+.container {
+    max-width: 500px;
+    margin-inline: auto;
+    padding: 20px;
+    width:100%;
+}
