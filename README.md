@@ -55,13 +55,12 @@ conversor-unidades/
 ##  Cómo usar el proyecto
 
 ### Ver en línea
-[Abrir en GitHub Pages](https://TU_USUARIO.github.io/conversor-unidades)
-*(reemplaza TU_USUARIO con tu nombre de usuario de GitHub)*
+[Abrir en GitHub Pages](https://CarlosNm0802.github.io/conversor-unidades)
 
 ### Correr en local
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/TU_USUARIO/conversor-unidades.git
+git clone https://github.com/CarlosNm0802/conversor-unidades.git
 
 # 2. Entrar a la carpeta
 cd conversor-unidades
@@ -107,7 +106,7 @@ El caso de uso principal es consultar precios en el celular mientras se hace una
 ## Autor
 
 **Carlos Nares**
-- GitHub: [@TU_USUARIO](https://github.com/CarlosNm0802)
+- GitHub: [@CarlosNM0802](https://github.com/CarlosNm0802)
 - Proyecto parte de mi ruta de aprendizaje Full-Stack
 
 ---
