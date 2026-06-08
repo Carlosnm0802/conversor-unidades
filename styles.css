@@ -79,3 +79,9 @@ nav {
     border-radius: 4px;
     cursor: pointer;
 }
+#campo-de select, #campo-a select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
