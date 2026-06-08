@@ -36,3 +36,17 @@ function poblarSelectores(categoria) {
     unidadDestino.selectedIndex = 1; //Seleccionar la segunda unidad por defecto
 }
 poblarSelectores('moneda');
+
+const tabs= document.querySelectorAll('.tab');
+tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+        //Remover la clase 'active' de todas las pestañas
+        tabs.forEach(function(t) {
+            t.classList.remove('active');
+        });
+        //Agregar la clase 'activo' a la pestaña clickeada
+        this.classList.add('activo');
+        //Poblar los selectores con las unidades de la categoría seleccionada
+        poblarSelectores(this.dataset.categoria);
+    });
+});
