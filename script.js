@@ -74,7 +74,6 @@ tabs.forEach(function(tab) {
         poblarSelectores(this.dataset.categoria);
     });
 });
-
 function convertir() {
     const valor = parseFloat(inputValor.value);
     const origen = unidadOrigen.value;
@@ -92,8 +91,24 @@ function convertir() {
     outputValor.value = parseFloat(resultado.toFixed(4));
 }
 
+function swap() {
+    // Intercambiar unidades (ya te lo di)
+    const temp = unidadOrigen.value;
+    unidadOrigen.value = unidadDestino.value;
+    unidadDestino.value = temp;
+
+    // Intercambiar valores — mismo patrón, 3 líneas
+    const tempValor = inputValor.value;
+    inputValor.value = outputValor.value;
+    outputValor.value = tempValor;
+
+    // Recalcular
+    convertir();
+}
+
+document.getElementById('btn-swap').addEventListener('click', swap);
+
 inputValor.addEventListener('input', convertir);
 unidadOrigen.addEventListener('change', convertir);
 unidadDestino.addEventListener('change', convertir);
-
 poblarSelectores('moneda');
